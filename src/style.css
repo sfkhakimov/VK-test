@@ -1,18 +1,77 @@
-@import url(./vendor/normalize.css);
-@import url(./vendor/fonts.css);
-@import url(./block/button/button.css);
-@import url(./block/search/search.css);
-@import url(./block/header/header.css);
-@import url(./block/nav/nav.css);
-@import url(./block/main/main.css);
-@import url(./block/result/result.css);
-@import url(./block/news-card/news-card.css);
-@import url(./block/loading/loading.css);
-@import url(./block/search-failed/search-failed.css);
-@import url(./block/popup/popup.css);
-@import url(./block/about/about.css);
-@import url(./block/footer/footer.css);
-@import url(./block/link/link.css);
-@import url(./block/overlay/overlay.css);
-@import url(./block/root/root.css);
-@import url(./block/heading/heading.css);
+body {
+  background: linear-gradient(270deg, #8a84f1, #536bff);
+}
+
+.root {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 200px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  display: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid gray;
+  background-color: coral;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.button_active {
+  display: block;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.user__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+
+.user__name {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.user__date {
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.user__city {
+  margin: 0;
+}
+
+.user__container {
+  width: 180px;
+}
+
+.user__friends {
+  font-size: 24px;
+  text-align: center;
+}
