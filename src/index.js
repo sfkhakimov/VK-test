@@ -5,7 +5,11 @@ import User from "./components/User";
 import Friends from "./components/Friends";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const api = new Api();
+  const url =
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:8080/"
+      : "https://sfkhakimov.github.io/VK-test/";
+  const api = new Api(url);
   const auth = new Auth();
   const token = auth.getToken();
 
@@ -17,11 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     document.querySelector(".button").classList.remove("button_active");
     api.getUser(token).then((data) => {
-      console.log(data);
       const user = new User(data.response[0]);
       user.render();
       api.getFriends(token).then((data) => {
-        console.log(data);
         const friends = new Friends(data.response.items);
         friends.render();
       });

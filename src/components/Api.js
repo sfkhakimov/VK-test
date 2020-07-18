@@ -1,14 +1,15 @@
 import fetchJsonp from "fetch-jsonp";
 
 export default class Api {
-  constructor() {
+  constructor(url) {
+    this.url = url;
     this.auth = this.auth.bind(this);
     this.getFriends = this.getFriends.bind(this);
   }
 
   auth() {
     window.location.replace(
-      "https://oauth.vk.com/authorize?client_id=7542238&redirect_uri=https://sfkhakimov.github.io/VK-test/&response_type=token"
+      `https://oauth.vk.com/authorize?client_id=7542238&redirect_uri=${this.url}&response_type=token`
     );
   }
 

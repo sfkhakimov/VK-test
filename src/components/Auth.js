@@ -4,7 +4,6 @@ export default class Auth {
   }
 
   getToken() {
-    console.log("тут");
     if (this._token === null || this._token === "") {
       const url = window.location.hash;
       const newUrl = url.match(/access_token=[a-z0-9]*/);
