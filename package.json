@@ -1,7 +1,7 @@
 {
   "name": "news-explorer-frontend",
-  "homepage": "https://github.com/SFKhakimov/news-explorer-frontend#readme",
-  "version": "1.0.1",
+  "homepage": "https://github.com/SFKhakimov/VK-test.git#readme",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SFKhakimov/news-explorer-frontend.git"
+    "url": "git+https://github.com/SFKhakimov/VK-test.git"
   },
   "author": "Shakir Khakimov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SFKhakimov/news-explorer-frontend/issues"
+    "url": "https://github.com/SFKhakimov/VK-test.git/issues"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",

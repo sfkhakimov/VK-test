@@ -8,7 +8,7 @@ export default class Api {
 
   auth() {
     window.location.replace(
-      "https://oauth.vk.com/authorize?client_id=7542238&redirect_uri=http://localhost:8080&response_type=token"
+      "https://oauth.vk.com/authorize?client_id=7542238&redirect_uri=https://sfkhakimov.github.io/VK-test/&response_type=token"
     );
   }
 
