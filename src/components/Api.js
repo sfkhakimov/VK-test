@@ -15,7 +15,7 @@ export default class Api {
 
   getFriends(token) {
     return fetchJsonp(
-      `https://api.vk.com/method/friends.get?v=5.120&${token}&order=random&count=5&fields=nickname,photo_200_orig`
+      `https://api.vk.com/method/friends.get?v=5.120&${token}&order=random&fields=nickname,photo_200_orig`
     )
       .then((res) => {
         if (res.ok) {

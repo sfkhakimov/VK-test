@@ -24,7 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const user = new User(data.response[0]);
       user.render();
       api.getFriends(token).then((data) => {
-        const friends = new Friends(data.response.items);
+        const friendsArr = [];
+        const items = data.response.items.filter(
+          (item) => item.deactivated === undefined
+        );
+        for (var i = 0; i < 5; i++) {
+          friendsArr.push(items[i]);
+        }
+        const friends = new Friends(friendsArr);
         friends.render();
       });
     });
